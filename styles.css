@@ -1,0 +1,145 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #bb94df;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: #906b91d7;
+    color: rgb(252, 200, 200);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f4b4ea;
+}
+
+#card {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #9370db;
+    border-radius: 10px;
+    background-color: #ffebf5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+    position: relative;
+}
+
+.bear {
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    margin-bottom: -50px;
+}
+
+.ear {
+    width: 30px;
+    height: 30px;
+    background-color: #9370db;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+}
+
+.ear.left {
+    left: 0;
+}
+
+.ear.right {
+    right: 0;
+}
+
+.face {
+    width: 100px;
+    height: 100px;
+    background-color: #9370db;
+    position: absolute;
+    top: 15px;
+    border-radius: 50%;
+}
+
+.eye {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    top: 35px;
+}
+
+.eye.left {
+    left: 25px;
+}
+
+.eye.right {
+    right: 25px;
+}
+
+.nose {
+    width: 20px;
+    height: 20px;
+    background-color: #ffebf5;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.arm {
+    width: 20px;
+    height: 60px;
+    background-color: #9370db;
+    position: absolute;
+    border-radius: 20px;
+    top: 60px;
+}
+
+.arm.left {
+    left: -20px;
+}
+
+.arm.right {
+    right: -20px;
+}
+
+.card-content {
+    font-size: 1em;
+    color: #333;
+    padding-top: 60px; /* Space for the bear */
+}
+
+.card-content h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #9370db;
+}
+
+.card-content p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
